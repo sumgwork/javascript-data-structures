@@ -1,4 +1,5 @@
 const {LinkedList, DoublyLinkedList} = require("./LinkedList");
+const {reverse, reverseModern, mergeSortedArrays} = require("./ArraysAndStrings");
 
 // const ll = new LinkedList(10);
 // ll.append(5);
@@ -13,16 +14,23 @@ const {LinkedList, DoublyLinkedList} = require("./LinkedList");
 
 
 
-// 9-->2-->5-->16
-const dll = new DoublyLinkedList(10);
-dll.append(5);
-dll.append(16);
-dll.prepend(9);
-dll.insert(2, 2);
+// // 9-->2-->5-->16
+// const dll = new DoublyLinkedList(10);
+// dll.append(5);
+// dll.append(16);
+// dll.prepend(9);
+// dll.insert(2, 2);
 
-dll.remove(1);
+// dll.remove(1);
 
-console.log(dll.printList());
+// console.log(dll.printList());
 
-const reversed = dll.reverse();
-console.log(reversed);
+// const reversed = dll.reverse();
+// console.log(reversed);
+
+const text = "Hi, I am Sumit.";
+console.log(reverse(text));
+console.log(reverseModern(text));
+
+console.log(mergeSortedArrays([0,3,4,31],[4,6,30]));
+// [0,3,4,4,6,30,31]

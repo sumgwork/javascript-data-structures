@@ -2,6 +2,8 @@
 const { LinkedList, DoublyLinkedList } = require("./DataStructures/LinkedList");
 const { reverse, reverseModern, mergeSortedArrays } = require("./DataStructures/ArraysAndStrings");
 const { HashTable } = require("./DataStructures/HashTable");
+const {Stack, Stack2} = require("./DataStructures/Stack");
+const {Queue} = require("./DataStructures/Queue");
 
 // Importing Algorithms
 const { firstRecurringCharacter } = require("./Algorithms/firstRecurringCharacter");
@@ -49,7 +51,30 @@ const { firstRecurringCharacter } = require("./Algorithms/firstRecurringCharacte
 // hashTable.get('apples');
 // hashTable.keys();
 
-firstRecurringCharacter([2, 5, 1, 2, 3, 5, 1, 2, 4]);
-firstRecurringCharacter([2, 1, 1, 2, 3, 5, 1, 2 ,4]);
-firstRecurringCharacter([2,3,4,5]);
+// firstRecurringCharacter([2, 5, 1, 2, 3, 5, 1, 2, 4]);
+// firstRecurringCharacter([2, 1, 1, 2, 3, 5, 1, 2 ,4]);
+// firstRecurringCharacter([2,3,4,5]);
 
+// const stack = new Stack2();
+// stack.push("Repl");
+// stack.push("Udemy");
+// stack.push("YouTube");
+
+// stack.pop();
+// stack.pop();
+
+// stack.peek();
+// stack.pop();
+// stack.pop();
+// stack.isEmpty();
+
+const queue = new Queue();
+queue.enqueue("Ayera");
+queue.enqueue("Anisa");
+queue.enqueue("Meenu");
+queue.enqueue("Sumit");
+
+queue.peek();
+queue.dequeue();
+queue.dequeue();
+queue.peek();

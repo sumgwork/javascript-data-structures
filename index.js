@@ -1,5 +1,10 @@
-const {LinkedList, DoublyLinkedList} = require("./LinkedList");
-const {reverse, reverseModern, mergeSortedArrays} = require("./ArraysAndStrings");
+// Importing Data Structures
+const { LinkedList, DoublyLinkedList } = require("./DataStructures/LinkedList");
+const { reverse, reverseModern, mergeSortedArrays } = require("./DataStructures/ArraysAndStrings");
+const { HashTable } = require("./DataStructures/HashTable");
+
+// Importing Algorithms
+const { firstRecurringCharacter } = require("./Algorithms/firstRecurringCharacter");
 
 // const ll = new LinkedList(10);
 // ll.append(5);
@@ -28,9 +33,23 @@ const {reverse, reverseModern, mergeSortedArrays} = require("./ArraysAndStrings"
 // const reversed = dll.reverse();
 // console.log(reversed);
 
-const text = "Hi, I am Sumit.";
-console.log(reverse(text));
-console.log(reverseModern(text));
+// const text = "Hi, I am Sumit.";
+// console.log(reverse(text));
+// console.log(reverseModern(text));
 
-console.log(mergeSortedArrays([0,3,4,31],[4,6,30]));
+// console.log(mergeSortedArrays([0,3,4,31],[4,6,30]));
 // [0,3,4,4,6,30,31]
+
+
+// const hashTable = new HashTable(10);
+// hashTable.set('grapes', 1000);
+// hashTable.set('apples', 50);
+// hashTable.set('apples', 40);
+// hashTable.get('grapes');
+// hashTable.get('apples');
+// hashTable.keys();
+
+firstRecurringCharacter([2, 5, 1, 2, 3, 5, 1, 2, 4]);
+firstRecurringCharacter([2, 1, 1, 2, 3, 5, 1, 2 ,4]);
+firstRecurringCharacter([2,3,4,5]);
+

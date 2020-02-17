@@ -8,6 +8,8 @@ const {Queue} = require("./DataStructures/Queue");
 // Importing Algorithms
 const { firstRecurringCharacter } = require("./Algorithms/firstRecurringCharacter");
 
+const {BinarySearchTree, traverse} = require("./DataStructures/Tree");
+
 // const ll = new LinkedList(10);
 // ll.append(5);
 // ll.append(16);
@@ -68,13 +70,31 @@ const { firstRecurringCharacter } = require("./Algorithms/firstRecurringCharacte
 // stack.pop();
 // stack.isEmpty();
 
-const queue = new Queue();
-queue.enqueue("Ayera");
-queue.enqueue("Anisa");
-queue.enqueue("Meenu");
-queue.enqueue("Sumit");
+// const queue = new Queue();
+// queue.enqueue("A");
+// queue.enqueue("a");
+// queue.enqueue("M");
+// queue.enqueue("S");
 
-queue.peek();
-queue.dequeue();
-queue.dequeue();
-queue.peek();
+// queue.peek();
+// queue.dequeue();
+// queue.dequeue();
+// queue.peek();
+
+const bst = new BinarySearchTree();
+bst.insert(9);
+bst.insert(4);
+bst.insert(1);
+bst.insert(20);
+bst.insert(170);
+bst.insert(6);
+bst.insert(15);
+
+console.log(JSON.stringify(traverse(bst.root)));
+
+bst.lookup(15);
+
+/*     9
+    4    20
+  1  6  15  170
+  */

@@ -9,7 +9,9 @@ const {Queue} = require("./DataStructures/Queue");
 const { firstRecurringCharacter } = require("./Algorithms/firstRecurringCharacter");
 
 const {BinarySearchTree, traverse} = require("./DataStructures/Tree");
+const {Graph} = require("./DataStructures/Graph");
 
+const {factorial, fibonacci, reverseString} = require("./Algorithms/recursiveFunctions");
 // const ll = new LinkedList(10);
 // ll.append(5);
 // ll.append(16);
@@ -81,20 +83,45 @@ const {BinarySearchTree, traverse} = require("./DataStructures/Tree");
 // queue.dequeue();
 // queue.peek();
 
-const bst = new BinarySearchTree();
-bst.insert(9);
-bst.insert(4);
-bst.insert(1);
-bst.insert(20);
-bst.insert(170);
-bst.insert(6);
-bst.insert(15);
+// const bst = new BinarySearchTree();
+// bst.insert(9);
+// bst.insert(4);
+// bst.insert(1);
+// bst.insert(20);
+// bst.insert(170);
+// bst.insert(6);
+// bst.insert(15);
 
-console.log(JSON.stringify(traverse(bst.root)));
+// console.log(JSON.stringify(traverse(bst.root)));
 
-bst.lookup(15);
+// bst.lookup(15);
 
 /*     9
     4    20
   1  6  15  170
   */
+
+
+// const graph = new Graph();
+// graph.addVertex('0');
+// graph.addVertex('1');
+// graph.addVertex('2');
+// graph.addVertex('3');
+// graph.addVertex('4');
+// graph.addVertex('5');
+// graph.addVertex('6');
+
+// graph.addEdge('3','1');
+// graph.addEdge('3','4');
+// graph.addEdge('4','2');
+// graph.addEdge('4','5');
+// graph.addEdge('1','2');
+// graph.addEdge('1','0');
+// graph.addEdge('0','2');
+// graph.addEdge('6','5');
+
+// graph.showConnections();
+
+// factorial(10);
+// fibonacci(8);
+reverseString('sumit');

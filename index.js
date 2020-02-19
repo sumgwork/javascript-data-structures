@@ -12,6 +12,8 @@ const {BinarySearchTree, traverse} = require("./DataStructures/Tree");
 const {Graph} = require("./DataStructures/Graph");
 
 const {factorial, fibonacci, reverseString} = require("./Algorithms/recursiveFunctions");
+
+const {bubbleSort,selectionSort,insertionSort} = require("./Algorithms/sorting");
 // const ll = new LinkedList(10);
 // ll.append(5);
 // ll.append(16);
@@ -124,4 +126,10 @@ const {factorial, fibonacci, reverseString} = require("./Algorithms/recursiveFun
 
 // factorial(10);
 // fibonacci(8);
-reverseString('sumit');
+// reverseString('sumit');
+const letters = ['a', 'd', 'z', 'e', 'r', 'b'];
+const basket = [2,65,34,2,1,7,8];
+
+// bubbleSort(basket);
+// selectionSort(basket);
+insertionSort(basket);
